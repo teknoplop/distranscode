@@ -8,10 +8,10 @@ Docker containers to maintiain an mp3 version of a Flac media tree. Rabbit MQ co
 docker run --name rabbitmq --net=host rabbitmq:3-management
 
 # Tasker
-sudo docker run -v <script dir>:/hpc -v <flac input dir>:/albums:ro -v <mp3 output dir>:/mp3 --net=host -it mp3-tasker python /hpc/flac2mp3tasker2.py
+sudo docker run -v <b>&lt;script dir&gt;</b>:/hpc -v <b>&lt;flac input dir&gt;</b>:/albums:ro -v <b>&lt;mp3 output dir&gt;</b>:/mp3 --net=host -it mp3-tasker python /hpc/flac2mp3tasker2.py
 
 # Worker
-sudo docker run  -v <nfs root mount>:/muzak --net=host -it mp3-worker_arm python /muzak/hpc/flac2mp3worker2.py
+sudo docker run  -v <b>&lt;nfs root mount&gt;</b>:/muzak --net=host -it mp3-worker_arm python /muzak/hpc/flac2mp3worker2.py
 
 # TODO 
 
