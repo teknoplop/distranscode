@@ -1,0 +1,12 @@
+message TranscodeTask 
+{
+	required int32  tid = 1;
+	required string inputName  = 2;
+        optional string commonPath = 3;
+        optional string inputPath  = 4;
+	optional string inputHash  = 5;
+        optional bytes  art   = 6;
+	optional string artHash  = 7;
+        optional string artName  = 8;
+	requried bool   partOfCompilation = 9;
+}
